@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get '/oauth2callback', to: 'session#create'
+
+  resources :sessions, only: [:destroy]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

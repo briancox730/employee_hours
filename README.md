@@ -1,7 +1,5 @@
-employee_hours
-==============
-
 Tracks Employee Hours
+==============
 
 Features to implement:
 

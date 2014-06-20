@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  get '/oauth2callback', to: 'session#create'
+
+  root to: '/', to: 'users#index'
+
+  get '/auth/google_oauth2/callback', to: 'sessions#create'
 
   resources :sessions, only: [:destroy]
 

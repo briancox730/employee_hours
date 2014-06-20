@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
       provider: auth.provider,
       uid: auth.uid,
       email: auth.info.email,
-      username: auth.info.nickname,
+      username: auth.info.email,
       avatar_url: auth.info.image
     )
   end

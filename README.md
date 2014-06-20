@@ -11,6 +11,17 @@ Features to implement:
 | col 2 is      | centered        |   $12 |
 | zebra stripes | are neat        |    $1 |
 
+| Owners         |
+| :------------- |
+| Viewable Calendar |
+| Determines available hours |
+| Color coded employees |
+| Determines roles available per hour |
+| Determines employee available roles |
+| Sets wage per role |
+| Can add a bounty |
+
+
 *Owners
 
 **Viewable Calendar

@@ -47,10 +47,10 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <% if signed_in? %>
-              <li><a><%= current_user.username %></a></li>
+              <li><%= link_to current_user.username, user_path(current_user) %></li>
               <li><%= link_to 'Sign out', session_path(current_user), method: :delete %></a></li>
             <% else %>
-              <li><a href="/auth/google_oauth2/">Sign in</a></li>
+              <li><a href="/auth/google_oauth2/">Sign in with Google</a></li>
             <% end %>
           </ul>
         </div><!--/.nav-collapse -->

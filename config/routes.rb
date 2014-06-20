@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get '/auth/google_oauth2/callback', to: 'sessions#create'
 
+  resources :users, only: [:index, :show]
+
   resources :sessions, only: [:destroy]
 
   # The priority is based upon order of creation: first created -> highest priority.

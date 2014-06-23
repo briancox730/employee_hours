@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :employments
+  has_many :businesses, through: :employments
 
   def self.find_or_create_from_omniauth(auth)
     provider = auth.provider

@@ -14,7 +14,7 @@
   <![endif]-->
 </head>
 <body>
-
+  <div class="container">
   <!-- Static navbar -->
     <div class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
@@ -25,7 +25,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Employee Hours</a>
+          <a class="navbar-brand" href="/">Employee Hours</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -47,7 +47,7 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <% if signed_in? %>
-              <li><%= link_to current_user.username, user_path(current_user) %></li>
+              <li><%= link_to image_tag(current_user.avatar_url), user_path(current_user) %></li>
               <li><%= link_to 'Sign out', session_path(current_user), method: :delete %></a></li>
             <% else %>
               <li><a href="/auth/google_oauth2/">Sign in with Google</a></li>
@@ -59,7 +59,7 @@
 
 
 
-  <div class="container">
+
     <% if flash.any? %>
       <div class="alert alert-info">
         <strong>

@@ -16,16 +16,16 @@ ActiveRecord::Schema.define(version: 20140620194519) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "business_users", force: true do |t|
-    t.integer "business_id", null: false
-    t.integer "user_id",     null: false
-  end
-
   create_table "businesses", force: true do |t|
     t.string "name", null: false
   end
 
   add_index "businesses", ["name"], name: "index_businesses_on_name", unique: true, using: :btree
+
+  create_table "employments", force: true do |t|
+    t.integer "business_id", null: false
+    t.integer "user_id",     null: false
+  end
 
   create_table "users", force: true do |t|
     t.string   "provider",   null: false

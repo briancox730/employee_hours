@@ -12,12 +12,6 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap
+ *= require my-styles
  */
-.navbar-right img {
-  float: left;
-  padding: 0;
-  margin: -6px 0 0 0;
-  height: 35px;
-  width: 35px;
-  border-radius: 30px;
-}

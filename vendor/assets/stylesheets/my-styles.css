@@ -1,0 +1,7 @@
+.navbar-avatar img {
+  padding: 0;
+  margin: -10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+}
